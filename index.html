@@ -593,24 +593,8 @@
 
   </section>
 
-  <!-- TICKER -->
-  <div class="ticker-wrap">
-    <div class="ticker" id="ticker"></div>
-  </div>
-  
-  <script>
-    const tags = [...document.querySelectorAll(
-      '#skills .skill-card:nth-child(1) .tag, #skills .skill-card:nth-child(2) .tag, #skills .skill-card:nth-child(3) .tag, #skills .skill-card:nth-child(4) .tag, #skills .skill-card:nth-child(5) .tag'
-    )].map(t => t.textContent);
-    const doubled = [...tags, ...tags];
-    const ticker = document.getElementById('ticker');
-    ticker.innerHTML = doubled.map(t =>
-      `<div class="ticker-item"><span class="dot"></span>${t}</div>`
-    ).join('');
-    ticker.style.animation = 'none';
-    ticker.offsetHeight;
-    ticker.style.animation = 'ticker 60s linear infinite';
-  </script>
+  <!-- DIVIDER -->
+  <div style="border-top: 1px solid rgba(120,180,245,0.15); margin: 0;"></div>
 
   <!-- ABOUT -->
   <section id="about">
