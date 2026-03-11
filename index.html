@@ -607,6 +607,9 @@
     ticker.innerHTML = doubled.map(t =>
       `<div class="ticker-item"><span class="dot"></span>${t}</div>`
     ).join('');
+    ticker.style.animation = 'none';
+    ticker.offsetHeight;
+    ticker.style.animation = 'ticker 60s linear infinite';
   </script>
 
   <!-- ABOUT -->
