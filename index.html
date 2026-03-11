@@ -595,37 +595,19 @@
 
   <!-- TICKER -->
   <div class="ticker-wrap">
-    <div class="ticker">
-      <div class="ticker-item"><span class="dot"></span>Python</div>
-      <div class="ticker-item"><span class="dot"></span>R</div>
-      <div class="ticker-item"><span class="dot"></span>SQL</div>
-      <div class="ticker-item"><span class="dot"></span>Graph Theory</div>
-      <div class="ticker-item"><span class="dot"></span>Machine Learning</div>
-      <div class="ticker-item"><span class="dot"></span>NLP</div>
-      <div class="ticker-item"><span class="dot"></span>Markov Chains</div>
-      <div class="ticker-item"><span class="dot"></span>Statistics</div>
-      <div class="ticker-item"><span class="dot"></span>Java</div>
-      <div class="ticker-item"><span class="dot"></span>LaTeX</div>
-      <div class="ticker-item"><span class="dot"></span>NetworkX</div>
-      <div class="ticker-item"><span class="dot"></span>Consumer Insights</div>
-      <div class="ticker-item"><span class="dot"></span>Fourier Analysis</div>
-      <div class="ticker-item"><span class="dot"></span>Topology</div>
-      <div class="ticker-item"><span class="dot"></span>Python</div>
-      <div class="ticker-item"><span class="dot"></span>R</div>
-      <div class="ticker-item"><span class="dot"></span>SQL</div>
-      <div class="ticker-item"><span class="dot"></span>Graph Theory</div>
-      <div class="ticker-item"><span class="dot"></span>Machine Learning</div>
-      <div class="ticker-item"><span class="dot"></span>NLP</div>
-      <div class="ticker-item"><span class="dot"></span>Markov Chains</div>
-      <div class="ticker-item"><span class="dot"></span>Statistics</div>
-      <div class="ticker-item"><span class="dot"></span>Java</div>
-      <div class="ticker-item"><span class="dot"></span>LaTeX</div>
-      <div class="ticker-item"><span class="dot"></span>NetworkX</div>
-      <div class="ticker-item"><span class="dot"></span>Consumer Insights</div>
-      <div class="ticker-item"><span class="dot"></span>Fourier Analysis</div>
-      <div class="ticker-item"><span class="dot"></span>Topology</div>
-    </div>
+    <div class="ticker" id="ticker"></div>
   </div>
+  
+  <script>
+    const tags = [...document.querySelectorAll(
+      '#skills .skill-card:nth-child(1) .tag, #skills .skill-card:nth-child(2) .tag, #skills .skill-card:nth-child(3) .tag, #skills .skill-card:nth-child(4) .tag, #skills .skill-card:nth-child(5) .tag'
+    )].map(t => t.textContent);
+    const doubled = [...tags, ...tags];
+    const ticker = document.getElementById('ticker');
+    ticker.innerHTML = doubled.map(t =>
+      `<div class="ticker-item"><span class="dot"></span>${t}</div>`
+    ).join('');
+  </script>
 
   <!-- ABOUT -->
   <section id="about">
