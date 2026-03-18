@@ -353,8 +353,16 @@
       opacity: 0; transition: opacity 0.3s;
     }
 
-    .skill-icon { font-size: 22px; margin-bottom: 16px; opacity: 0.85; }
-    .skill-title { font-size: 11px; font-weight: 500; color: var(--soft); margin-bottom: 14px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .skill-header{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .skill-icon{ font-size: 16px; opacity: 0.85; }
+    .skill-title{ font-size: 16px; font-weight: 500; color: var(--soft); letter-spacing: 0.06em; text-transform: uppercase; }
+    
     .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
     .tag {
@@ -590,7 +598,6 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="section-header">
-      <span class="section-num">01</span>
       <h2>About <em>Me</em></h2>
       <div class="divider"></div>
     </div>
@@ -633,28 +640,31 @@
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-header">
-      <span class="section-num">02</span>
       <h2>Skills <em>& Tools</em></h2>
       <div class="divider"></div>
     </div>
     <div class="skills-grid">
       <div class="skill-card">
-        <div class="skill-icon">∑</div>
-        <div class="skill-title">Pure Mathematics</div>
-        <div class="skill-tags">
-          <span class="tag">Real Analysis</span>
-          <span class="tag">Abstract Algebra</span>
-          <span class="tag">Topology</span>
-          <span class="tag">Measure Theory</span>
-          <span class="tag">Fourier Analysis</span>
-           <span class="tag">Functional Analysis</span>
-          <span class="tag">Complex Analysis</span>
-          <span class="tag">Galois Theory</span>
+        <div class="skill-header">
+          <div class="skill-icon">∑</div>
+          <div class="skill-title">Pure Mathematics</div>
+        </div>
+          <div class="skill-tags">
+            <span class="tag">Real Analysis</span>
+            <span class="tag">Abstract Algebra</span>
+            <span class="tag">Topology</span>
+            <span class="tag">Measure Theory</span>
+            <span class="tag">Fourier Analysis</span>
+             <span class="tag">Functional Analysis</span>
+            <span class="tag">Complex Analysis</span>
+            <span class="tag">Galois Theory</span>
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">⟨π⟩</div>
-        <div class="skill-title">Applied Mathematics</div>
+        <div class="skill-header">
+          <div class="skill-icon">⟨π⟩</div>
+          <div class="skill-title">Applied Mathematics</div>
+        </div>
         <div class="skill-tags">
           <span class="tag">Probability</span>
           <span class="tag">Statistics</span>
@@ -670,8 +680,10 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">⟨/⟩</div>
-        <div class="skill-title">Programming</div>
+        <div class="skill-header">
+          <div class="skill-icon">⟨/⟩</div>
+          <div class="skill-title">Programming</div>
+        </div>
         <div class="skill-tags">
           <span class="tag">Python</span>
           <span class="tag">R</span>
@@ -683,8 +695,10 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">⬡</div>
-        <div class="skill-title">Data & ML</div>
+        <div class="skill-header>
+          <div class="skill-icon">⬡</div>
+          <div class="skill-title">Data & ML</div>
+        </div>
         <div class="skill-tags">
           <span class="tag">Machine Learning</span>
           <span class="tag">NLP</span>
@@ -695,8 +709,10 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">◈</div>
-        <div class="skill-title">Market Research</div>
+        <div class="skill-header">
+          <div class="skill-icon">◈</div>
+          <div class="skill-title">Market Research</div>
+        </div>
         <div class="skill-tags">
           <span class="tag">Consumer Insights</span>
           <span class="tag">QDA Miner</span>
@@ -707,8 +723,10 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">◎</div>
-        <div class="skill-title">Languages</div>
+        <div class="skill-header">
+          <div class="skill-icon">◎</div>
+          <div class="skill-title">Languages</div>
+        </div>
         <div class="skill-tags">
           <span class="tag">English</span>
           <span class="tag">French</span>
@@ -722,7 +740,6 @@
   <!-- RESEARCH -->
   <section id="projects">
     <div class="section-header">
-      <span class="section-num">03</span>
       <h2>Research <em>& Projects</em></h2>
       <div class="divider"></div>
     </div>
@@ -774,7 +791,6 @@
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-header">
-      <span class="section-num">04</span>
       <h2>Work <em>Experience</em></h2>
       <div class="divider"></div>
     </div>
@@ -821,7 +837,6 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-header">
-      <span class="section-num">05</span>
       <h2>Get in <em>Touch</em></h2>
       <div class="divider"></div>
     </div>
