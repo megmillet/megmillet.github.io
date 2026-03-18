@@ -296,7 +296,6 @@
       background: rgba(120,180,245,0.03);
     }
 
-    .badge:hover { border-color: rgba(184,169,232,0.4); color: var(--accent-2); background: rgba(184,169,232,0.06); }
     .badge.accent { border-color: rgba(120,180,245,0.4); color: var(--accent); background: rgba(120,180,245,0.07); }
 
     .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
@@ -315,9 +314,6 @@
       background: linear-gradient(90deg, transparent, var(--accent), var(--accent-2), transparent);
       opacity: 0; transition: opacity 0.3s;
     }
-
-    .stat-box:hover { border-color: rgba(120,180,245,0.28); background: var(--navy-3); }
-    .stat-box:hover::before { opacity: 1; }
 
     .stat-num {
       font-family: var(--serif);
@@ -357,9 +353,6 @@
       opacity: 0; transition: opacity 0.3s;
     }
 
-    .skill-card:hover { border-color: rgba(120,180,245,0.25); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(8,13,26,0.5); }
-    .skill-card:hover::before, .skill-card:hover::after { opacity: 1; }
-
     .skill-icon { font-size: 22px; margin-bottom: 16px; opacity: 0.85; }
     .skill-title { font-size: 11px; font-weight: 500; color: var(--soft); margin-bottom: 14px; letter-spacing: 0.12em; text-transform: uppercase; }
     .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -371,8 +364,6 @@
       letter-spacing: 0.06em; text-transform: uppercase;
       transition: all 0.2s;
     }
-
-    .tag:hover { border-color: rgba(184,169,232,0.35); color: var(--accent-2); }
 
     /* ── PROJECTS ── */
     #projects { border-top: 1px solid rgba(120,180,245,0.08); }
