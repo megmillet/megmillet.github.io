@@ -49,7 +49,7 @@
     }
 
     /* blue-tinted grid */
-    body::after {
+    /*body::after {
       content: '';
       position: fixed; inset: 0;
       background-image:
@@ -58,7 +58,36 @@
       background-size: 56px 56px;
       pointer-events: none;
       z-index: 0;
+    }*/
+
+    /* subtle dot patterns */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: radial-gradient(rgba(120,180,245,0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+      z-index: 0;
     }
+
+    /* clean solid dark 
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background: transparent;
+      pointer-events: none;
+      z-index: 0;
+    } */
+
+    /* soft radial vignette 
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background: radial-gradient(ellipse at 60% 20%, rgba(120,180,245,0.05) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(184,169,232,0.04) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    } */
 
     /* ── NAV ── */
     nav {
