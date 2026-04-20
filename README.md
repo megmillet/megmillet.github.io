@@ -14,7 +14,7 @@ A single-page personal website showcasing my academic background, work experienc
 
 - **About** — Background as a Ph.D. student in Applied Mathematics at Illinois Institute of Technology and B.A. graduate from McGill University
 - **Skills & Tools** — Pure mathematics, applied mathematics, programming (Python, R, SQL, Java, C/C++, LaTeX), data & ML, market research, and languages
-- **Research & Projects** — Selected projects including Amazon Co-Purchasing Network Analysis, Google PageRank Score research, BioCase Competition (2nd place), and Vertical Flight Society (3rd place)
+- **Research & Projects** — Selected projects including Amazon Co-Purchasing Network Analysis, Google PageRank Score research, BioCase Competition (2nd place), and Vertical Flight Society (3rd place) — [View Projects Repository](https://github.com/megmillet/Projects)
 - **Work Experience** — Consumer Insights Data Analyst at Takasago International, Graduate TA at Illinois Tech, Undergraduate TA at McGill
 - **Contact** — Links to email, LinkedIn, and GitHub
 
