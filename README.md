@@ -24,6 +24,12 @@ A single-page personal website showcasing my academic background, work experienc
 - Google Fonts: DM Mono & Cormorant Garamond
 - Hosted via **GitHub Pages**
 
+## LaTeX Resources
+
+Looking to get started with LaTeX for your academic notes or documents? I've put together a beginner-friendly guide with free-to-use templates for lecture notes and resumes:
+
+📄 [LaTeX Starter Guide](https://github.com/megmillet/LaTeX-Starter-Guide)
+
 ## Contact
 
 - 📧 [meganmillet316@gmail.com](mailto:meganmillet316@gmail.com)
