@@ -1,6 +1,6 @@
 # megmillet.github.io
 
-Personal portfolio website for **Megan Millet** — Applied Mathematician & Data Analyst.
+Personal portfolio website for **Megan Millet**: Applied Mathematician & Data Analyst.
 
 🌐 **Live site:** [megmillet.github.io](https://megmillet.github.io)
 
