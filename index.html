@@ -490,6 +490,74 @@
       color: var(--accent-2); font-size: 8px;
     }
 
+    /* ── RESOURCES ── */
+    #resources { border-top: 1px solid rgba(120,180,245,0.08); background: var(--navy-2); }
+
+    .resources-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; }
+
+    .resource-card {
+      background: var(--navy);
+      border: 1px solid rgba(120,180,245,0.09);
+      padding: 36px 38px;
+      display: flex; flex-direction: column; gap: 18px;
+      transition: all 0.3s;
+      position: relative; overflow: hidden;
+    }
+
+    .resource-card::before {
+      content: '';
+      position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(to bottom, var(--accent), var(--accent-2));
+      transform: scaleY(0); transform-origin: bottom;
+      transition: transform 0.3s;
+    }
+
+    .resource-card:hover { border-color: rgba(120,180,245,0.28); }
+    .resource-card:hover::before { transform: scaleY(1); }
+
+    .resource-icon { font-size: 28px; opacity: 0.8; }
+
+    .resource-title {
+      font-family: var(--serif);
+      font-size: 22px; font-weight: 700; letter-spacing: -0.3px; color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .resource-desc { font-size: 12px; color: var(--muted); line-height: 2; flex: 1; }
+
+    .resource-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    .resource-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+
+    .resource-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 9px 22px;
+      font-family: var(--mono);
+      font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase;
+      text-decoration: none; border: 1px solid;
+      transition: all 0.25s; cursor: crosshair;
+    }
+
+    .resource-btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-3));
+      color: var(--navy); border-color: transparent; font-weight: 500;
+    }
+
+    .resource-btn-primary:hover {
+      background: transparent; color: var(--accent); border-color: var(--accent);
+      box-shadow: 0 0 20px rgba(120,180,245,0.18);
+    }
+
+    .resource-btn-secondary {
+      background: transparent; color: var(--muted);
+      border-color: rgba(120,180,245,0.2);
+    }
+
+    .resource-btn-secondary:hover {
+      border-color: var(--accent-2); color: var(--accent-2);
+      box-shadow: 0 0 16px rgba(184,169,232,0.12);
+    }
+
     /* ── CONTACT ── */
     #contact { border-top: 1px solid rgba(120,180,245,0.08); }
 
@@ -569,6 +637,7 @@
       .project-row { grid-template-columns: 1fr auto; gap: 16px; }
       .project-num, .project-badge { display: none; }
       .exp-top { flex-direction: column; gap: 8px; }
+      .resources-grid { grid-template-columns: 1fr; }
       footer { flex-direction: column; gap: 8px; text-align: center; }
     }
   </style>
@@ -583,6 +652,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Research</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#resources">Resources</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -853,6 +923,36 @@
         <ul class="exp-bullets">
           <li>Graded assignments and held office hours for 100+ students across Honors Algebra III, Probability, Statistical Computing, Principles of Statistics I, and Calculus II.</li>
         </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources">
+    <div class="section-header">
+      <h2>Free <em>Resources</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="resources-grid">
+
+      <div class="resource-card">
+        <div class="resource-icon">◻</div>
+        <div>
+          <div class="resource-title">LaTeX Resume Template</div>
+          <p class="resource-desc">
+            A clean, minimal academic resume template built entirely in LaTeX. Designed for mathematicians, scientists, and researchers — free to use and customise for your own applications.
+          </p>
+        </div>
+        <div class="resource-tags">
+          <span class="tag">Resume</span>
+          <span class="tag">Academic CV</span>
+          <span class="tag">LaTeX</span>
+          <span class="tag">Free to Use</span>
+        </div>
+        <div class="resource-actions">
+          <a href="https://github.com/megmillet/LaTeX-Starter-Guide" target="_blank" class="resource-btn resource-btn-primary">View on GitHub →</a>
+        </div>
       </div>
 
     </div>
