@@ -16,6 +16,7 @@ A single-page personal website showcasing my academic background, work experienc
 - **Skills & Tools**
 - **[Research & Projects](https://github.com/megmillet/Projects)**
 - **Work Experience**
+- **Resources**
 - **Freelance Services (Fiverr)**
 - **Contact**
 
